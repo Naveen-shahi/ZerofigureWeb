@@ -1,0 +1,84 @@
+.orderSummary {
+    max-width: 300px;
+    margin: 0 auto;
+    .continueBtn {
+        margin-top: 41px;
+    }
+    h1 {
+        font-size: $h1Font;
+        padding: 0;
+        margin-bottom: 34px;
+        text-align: center;
+        color: $white;
+    }
+    .estDelivery {
+        font-weight: 400;
+        font-size: $h6Font;
+        line-height: 20px;
+        color: $white; 
+        margin-bottom: 15px;
+    }
+    .orderSummaryText {
+        font-weight: bold;
+        font-size: $h4Font;
+        line-height: 25px;
+        color: $white; 
+        margin-bottom: 24px;
+    }
+    address,.phoneNumber{
+        font-weight: 400;
+        font-size: $h6Font;
+        line-height: 20px;
+        color: $white;  
+    }
+    address{
+        font-style: normal;
+        margin-top: 11px;
+    }
+    .deliveryWraper{
+        padding:24px 0px  28px 0px;
+        border-bottom: 0.5px solid rgba(255, 255, 255, 0.2);
+    }
+    .phoneNumber{
+        margin-top: 28px;
+    }
+    ul{
+        padding-left: 15px;
+        li{
+            font-weight: 400;
+            font-size: $h6Font;
+            line-height: 20px;
+            margin-bottom: 15px;
+            color: $white; 
+        }
+    }
+    .bigSize{
+        font-size: $h4Font;
+        font-weight:700;
+        color:$white;
+    }
+    .ProductPriceDescription{
+        font-weight: 400;
+        font-size: $h6Font;
+        line-height: 20px;
+        color: $white; 
+        padding:24px 0px 35px 0px;
+        border-top: 0.5px solid rgba(255, 255, 255, 0.2);
+        border-bottom: 0.5px solid rgba(255, 255, 255, 0.2);
+        div{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 15px;
+        }
+    }
+    p {
+        font-size: $h6Font - 2;
+        color: $white;
+        line-height: 20px;
+        margin-top: 16px;
+        a {
+            text-decoration: underline;
+        }
+    }
+}

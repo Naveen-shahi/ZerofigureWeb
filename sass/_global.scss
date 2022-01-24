@@ -1,0 +1,57 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+body {
+    margin: 0;
+    font-family: "Overpass", sans-serif;
+    font-weight: 400;
+    overflow-x: hidden;
+    background-color: #000000;
+}
+.container {
+    max-width: 1296px;
+    margin: 110px auto 40px auto;
+     &.marginMinium{
+        margin: 54px auto 60px auto;
+    }
+}
+.continueBtn,
+.pinkBtn,.whiteBtn {
+    font-size: $h5Font;
+    min-width: 300px;
+    height: 60px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    border-radius: 16px;
+    background-color: $lightPink;
+    margin-top: 15px;
+    color: $blackColor;
+    margin-left: calc(50% - 150px);
+}
+.whiteBtn{
+    background-color: $white;
+    border:1px solid $blackColor;
+    color:$blackColor;
+}
+@media only screen and (min-width: 768px) {
+}
+@media only screen and (min-width: 992px) {
+}
+@media only screen and (min-width: 1200px) {
+}
+@media only screen and (min-width: 1360px) {
+}
+@media only screen and (min-width: 1440px) {
+}
+@media only screen and (min-width: 1600px) {
+}
+@media only screen and (min-width: 2000px) {
+}

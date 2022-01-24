@@ -1,0 +1,44 @@
+.thankYou {
+    color: $white;
+    text-align: center;
+    width: 100%;
+    .continueBtn {
+        margin: 88px 0px;
+    }
+    h1 {
+        font-weight: 700;
+        font-size: $XXLfont;
+        line-height: 76px;
+        text-align: center;
+        color: $white;
+    }
+    .orderNumber {
+        font-weight: normal;
+        font-size: $h4Font;
+        line-height: 25px;
+        color: $white;
+        margin-top: 12px;
+    }
+    .estimateDelivery {
+        font-weight: 400;
+        font-size: $h4Font;
+        line-height: 23px;
+        color: $white;
+        margin: 53px 0px;
+        h1 {
+            font-weight: 700;
+            font-size: $h2Font;
+            line-height: 38px;
+            color: $white;
+            margin-bottom: 12px;
+        }
+    }
+    .note {
+        font-weight: 400;
+        font-size: $h4Font;
+        line-height: 23px;
+        color: $white;
+        max-width: 60%;
+        margin: 0 auto;
+    }
+}

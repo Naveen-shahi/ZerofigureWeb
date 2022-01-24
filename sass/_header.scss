@@ -1,0 +1,63 @@
+header {
+    background-color: $greyDark;
+    backdrop-filter: blur(20px);
+    border-radius: 0px 0px 15px 15px;
+    margin: 0px 72px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 25px 16px 43px;
+    max-width: 1296px;
+    margin: 0 auto;
+    .logoImg {
+        img {
+            min-width: 22px;
+            min-height: 46px;
+            width: 22px;
+            height: 46px;
+        }
+    }
+    .lt {
+        display: flex;
+        align-items: center;
+        min-width: calc(586px - 25px);
+        justify-content: space-between;
+        nav {
+            ul {
+                display: flex;
+                align-items: center;
+                padding: 0;
+                margin: 0;
+                li {
+                    list-style: none;
+                    padding-right: 43px;
+                    &:last-of-type {
+                        padding-right: 0;
+                    }
+                }
+            }
+            a {
+                color: $white70;
+                font-size: $h6Font;
+                &:hover{
+                    color:$lightPink;
+                }
+            }
+        }
+        .myaccountBtn {
+            min-width: 163px;
+            min-height: 48px;
+            color: $lightPink;
+            border: 1px solid $lightPink;
+            box-sizing: border-box;
+            border-radius: 16px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            &:hover{
+             background-color: $lightPink;
+             color:$white;   
+            }
+        }
+    }
+}

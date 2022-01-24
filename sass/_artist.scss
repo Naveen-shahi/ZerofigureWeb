@@ -1,0 +1,141 @@
+section {
+    &.artist {
+        display: flex;
+        padding: 0px 25px 0px 43px;
+        aside {
+            width: 220px;
+        }
+        .content {
+            width: calc(100% - 220px);
+            margin-top: 95px;
+            .selectSubcription{
+                display: flex;
+                .subcription{
+                    flex:1;
+                }
+            }
+            .myDetailTable {
+                table {
+                    width: 100%;
+                }
+                tr {
+                    th,
+                    td {
+                        border-bottom: 0.3px solid $white30;
+                        font-size: $h5Font;
+                        line-height: 23px;
+                        color: $white;
+                    }
+                }
+                th {
+                    font-weight: 700;
+                    text-align: left;
+                    padding: 23px 0px;
+                }
+                td {
+                    font-weight: 400;
+                    padding: 10px;
+                }
+                input {
+                    font-size: $h5Font;
+                    line-height: 23px;
+                    color: $white;
+                    background-color: $blackColor;
+                    border: 0;
+                    &:focus {
+                        outline: none;
+                    }
+                    ::-webkit-input-placeholder {
+                        color: $white;
+                    }
+                    :-ms-input-placeholder {
+                        color: $white;
+                    }
+                    ::placeholder {
+                        color: $white;
+                    }
+                }
+                .editBtn {
+                    font-weight: 400;
+                    font-size: $h6Font;
+                    line-height: 20px;
+                    color: $blue;
+                }
+                .delAccount {
+                    font-weight: 400;
+                    font-size: $h5Font;
+                    line-height: 23px;
+                    text-align: center;
+                    color: $white50;
+                    margin-top: 150px;
+                    display: inline-block;
+                    width: 100%;
+                }         
+            }
+            .noOrder {
+                font-weight: 400;
+                font-size: $h5Font;
+                line-height: 23px;
+                text-align: center;
+                color: $white;
+                max-width: 356px;
+                margin-left: 150px;
+                .pinkBtn {
+                    margin-top: 43px;
+                    margin-left: auto;
+                }
+            }
+            h1 {
+                font-weight: 700;
+                font-size: $h2Font;
+                line-height: 38px;
+                color: $white;
+                margin-bottom: 38px;
+            }
+            .seeHistory {
+                text-align: center;
+                max-width: 289px;
+                .seeAnchor {
+                    font-weight: normal;
+                    font-size: $h4Font;
+                    line-height: 25px;
+                    text-decoration-line: underline;
+                    color: $white;
+                    margin-top: 38px;
+                    display: block;
+                }
+            }
+        }
+        .artistName {
+            font-weight: 600;
+            font-size: 40px;
+            line-height: 51px;
+            color: $white;
+            margin-bottom: 50px;
+        }
+        nav {
+            ul {
+                li {
+                    &:last-of-type {
+                        a {
+                            margin-bottom: 0;
+                        }
+                    }
+                    a {
+                        font-weight: normal;
+                        font-size: $h6Font;
+                        line-height: 20px;
+                        color: $white50;
+                        margin-bottom: 19px;
+                        display: block;
+                        &.active,
+                        &:hover {
+                            color: $white;
+                            font-weight: 700;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
