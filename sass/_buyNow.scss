@@ -24,7 +24,7 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        margin-bottom: 40px;
+        margin:20px 0px 40px 0px;
         label {
             &.heading {
                 font-weight: 400;
@@ -77,67 +77,6 @@
             }
         }
     }
-    .selectSubscription {
-        border: 1px solid $white50;
-        box-sizing: border-box;
-        border-radius: 16px;
-        width: 100%;
-        padding: 18px 30px;
-        margin-bottom: 23px;
-        &.open {
-            ul {
-                display: block;
-            }
-            label {
-                &.heading {
-                    &::after {
-                        transform: rotate(180deg);
-                    }
-                }
-            }
-        }
-        label {
-            &.heading {
-                font-weight: 400;
-                font-size: $h6Font;
-                line-height: 20px;
-                color: $white50;
-                position: relative;
-                width: 100%;
-                display: inline-block;
-                &::after {
-                    content: "";
-                    position: absolute;
-                    width: 15px;
-                    height: 8px;
-                    background-image: url("data:image/svg+xml,%3Csvg width='15' height='8' viewBox='0 0 15 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg filter='url(%23filter0_i_727_827)'%3E%3Cline x1='0.5' y1='-0.5' x2='9.25993' y2='-0.5' transform='matrix(-0.707107 -0.707107 -0.707107 0.707107 6.90137 8.00006)' stroke='white' stroke-linecap='round'/%3E%3Cline x1='7.22119' y1='7.19426' x2='13.4154' y2='1.00005' stroke='white' stroke-linecap='round'/%3E%3C/g%3E%3Cdefs%3E%3Cfilter id='filter0_i_727_827' x='0.207275' y='0.500061' width='13.708' height='11.2929' filterUnits='userSpaceOnUse' color-interpolation-filters='sRGB'%3E%3CfeFlood flood-opacity='0' result='BackgroundImageFix'/%3E%3CfeBlend mode='normal' in='SourceGraphic' in2='BackgroundImageFix' result='shape'/%3E%3CfeColorMatrix in='SourceAlpha' type='matrix' values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0' result='hardAlpha'/%3E%3CfeOffset dy='4'/%3E%3CfeGaussianBlur stdDeviation='2'/%3E%3CfeComposite in2='hardAlpha' operator='arithmetic' k2='-1' k3='1'/%3E%3CfeColorMatrix type='matrix' values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0'/%3E%3CfeBlend mode='normal' in2='shape' result='effect1_innerShadow_727_827'/%3E%3C/filter%3E%3C/defs%3E%3C/svg%3E");
-                    background-size: 100% 100%;
-                    top: 50%;
-                    right: 0;
-                    transform: translateY(-50%);
-                }
-            }
-        }
-        ul {
-            display: none;
-            li {
-                font-weight: 400;
-                font-size: $smallHeading + 2;
-                line-height: 18px;
-                color: $white;
-                list-style: none;
-                padding: 11px 0px;
-                border-bottom: 0.5px solid rgba(255, 255, 255, 0.2);
-                display: flex;
-                align-items: center;
-                justify-content: space-between;
-                &:last-of-type {
-                    border-bottom: 0;
-                    padding-bottom: 0;
-                }
-            }
-        }
-    }
     .buyNowWrapper {
         display: flex;
         align-items: center;
@@ -156,6 +95,7 @@
             box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
             border-radius: 16px;
             font-weight: 700;
+            font-size: $h6Font;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -297,56 +237,6 @@
                         background-size: 100% 100%;
                     }
                 }
-            }
-        }
-        .form-group {
-            margin-top: 30px;
-            position: relative;
-            .passwordShowBtn {
-                position: absolute;
-                top: 27px;
-                right: 30px;
-                width: 18px;
-                height: 7px;
-                background-image: url("../Images/eyeClose.png");
-                background-size: 100% 100%;
-                &.eyeOpen {
-                    top: 21px;
-                    width: 20px;
-                    height: 16px;
-                    background-image: url("data:image/svg+xml,%3Csvg width='20' height='16' viewBox='0 0 20 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1.11774 8.467C1.04045 8.32329 1 8.16267 1 7.9995C1 7.83633 1.04045 7.6757 1.11774 7.532C3.00974 4.033 6.50474 1 9.99974 1C13.4947 1 16.9897 4.033 18.8817 7.533C18.959 7.67671 18.9995 7.83733 18.9995 8.0005C18.9995 8.16367 18.959 8.3243 18.8817 8.468C16.9897 11.967 13.4947 15 9.99974 15C6.50474 15 3.00974 11.967 1.11774 8.467V8.467Z' stroke='white' stroke-opacity='0.5' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M12.0462 5.80417C12.3375 6.07971 12.5706 6.41087 12.7317 6.77805C12.8929 7.14523 12.9788 7.54099 12.9844 7.94194C12.9899 8.34289 12.9151 8.74089 12.7642 9.11241C12.6133 9.48393 12.3895 9.82144 12.106 10.105C11.8224 10.3885 11.4849 10.6123 11.1134 10.7632C10.7419 10.9141 10.3439 10.9889 9.94294 10.9834C9.54199 10.9778 9.14623 10.8919 8.77905 10.7307C8.41187 10.5696 8.08071 10.3365 7.80517 10.0452C7.27525 9.47647 6.98675 8.72428 7.00047 7.94708C7.01418 7.16987 7.32903 6.42833 7.87868 5.87868C8.42833 5.32903 9.16987 5.01418 9.94708 5.00047C10.7243 4.98675 11.4765 5.27525 12.0452 5.80517' stroke='white' stroke-opacity='0.5' stroke-width='1.429' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
-                }
-            }
-            .info {
-                font-size: $smallHeading;
-                color: $white50;
-                margin-top: 13px;
-                padding-left: 30px;
-                display: inline-block;
-                width: 100%;
-                text-align: left;
-            }
-        }
-        .form-control {
-            border: 1px solid $white;
-            box-sizing: border-box;
-            border-radius: 50px;
-            font-size: $h5Font;
-            color: $white;
-            padding: 18px 30px;
-            background-color: $blackColor;
-            width: 100%;
-            &:focus {
-                outline: none;
-            }
-            ::-webkit-input-placeholder {
-                color: $white50;
-            }
-            :-ms-input-placeholder {
-                color: $white50;
-            }
-            ::placeholder {
-                color: $white50;
             }
         }
     }

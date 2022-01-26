@@ -39,8 +39,8 @@ header {
             a {
                 color: $white70;
                 font-size: $h6Font;
-                &:hover{
-                    color:$lightPink;
+                &:hover {
+                    color: $lightPink;
                 }
             }
         }
@@ -54,10 +54,32 @@ header {
             display: inline-flex;
             align-items: center;
             justify-content: center;
-            &:hover{
-             background-color: $lightPink;
-             color:$white;   
+            &:hover {
+                background-color: $lightPink;
+                color: $white;
             }
+        }
+    }
+}
+@media only screen and (max-width: 768px) {
+    header {
+        padding: 16px;
+        display: inherit;
+        margin: 0px 16px;
+        .lt {
+            min-width: calc(100% - 16px);
+            nav{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-top: 16px;
+                width: 100%;
+            }
+        }
+         .myaccountBtn{
+            position: absolute;
+            top: 16px;
+            right: 16px;
         }
     }
 }

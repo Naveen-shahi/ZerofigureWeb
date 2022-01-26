@@ -13,7 +13,7 @@
 <body>
   <!--header start here-->
   <header>
-    <a href="buyNow.html" class="logoImg"><img src="Images/logo.png" alt=""></a>
+    <a href="/" class="logoImg"><img src="Images/logo.png" alt=""></a>
     <div class="lt">
       <nav>
         <ul>
@@ -41,13 +41,13 @@
         <nav>
           <ul>
             <li>
+              <a href="artistCorner.html" class="active">Artist Corner</a>
+            </li>
+            <li>
               <a href="artist.html">What’s on today</a>
             </li>
             <li>
-              <a href="frame.html" class="active">Frames</a>
-            </li>
-            <li>
-              <a href="noframe.html">for checking no frame</a>
+              <a href="frame.html">Frames</a>
             </li>
             <li>
               <a href="myDetail.html">My details</a>
@@ -59,46 +59,64 @@
         </nav>
       </aside>
       <div class="content">
-        <h1>Frames</h1>
-        <div class="frameWrapper">
-          <div class="frameBox">
-            <div class="frameImg">
-              <img src="Images/oldframe.png" alt="">
+        <h1>Artist corner</h1>
+        <section class="artistCorner">
+          <div class="lt">
+            <div class="ltInner">
+              <a href="uploadContent.html" class="uploadWrapper">
+                <div class="uploadIcon">
+                  <img src="Images/plus.png" alt="">
+                </div>
+                <!-- <span class="caption">Upload content</span> -->
+              </a>
+              <div class="uploadedImg">
+                <img src="Images/unnamed.png" alt="">
+              </div>
             </div>
-            <div class="frameName">
-              <div class="name">Ep. 1 frame</div>
-              <input type="text" value="Ep. 1 frame">
-              <button type="button" class="pencilIcon"></button>
+            <div class="rtInner">
+              <div class="uploadedImg">
+                <img src="Images/unnamed.png" alt="">
+              </div>
             </div>
-            <a href="" class="pinkSmallBtn">Connect frame</a>
           </div>
-          <div class="frameBox">
-            <div class="frameImg">
-              <img src="Images/oldframe.png" alt="">
+          <div class="rt">
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="Artist Name">
             </div>
-            <div class="frameName">
-              <div class="name">Ep. 1 frame</div>
-              <input type="text" value="Ep. 1 frame">
-              <button type="button" class="pencilIcon"></button>
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="Instagram Handle">
             </div>
-            <a href="" class="borderBtn">Disconnect frame</a>
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="Website URL">
+            </div>
+            <div class="form-group">
+              <textarea name="" id="" cols="30" rows="5" class="form-control" placeholder="Bio"></textarea>
+            </div>
           </div>
-          <div class="frameBox">
-            <div class="frameImg">
-              <img src="Images/oldframe.png" alt="">
-            </div>
-            <div class="frameName">
-              <div class="name">Ep. 1 frame</div>
-              <input type="text" value="Ep. 1 frame">
-              <button type="button" class="pencilIcon"></button>
-            </div>
-            <a href="javascipt:void(0)" class="pinkSmallBtn activeFrame">Active</a>
+        </section>
+        <section class="dashBoard">
+          <h1>My dashboard</h1>
+          <div class="header">
+            <input type="month" value="2022-05">
           </div>
-        </div>
-        <!-- <div class="noOrder">
-          You currently do not have any orders.
-          <a href="" class="pinkBtn">Explore Zero figures frames</a>
-        </div> -->
+          <div class="grapWr">
+            <div class="lt">
+              <div class="status earned">
+                <label>Earned</label>
+                £235.90
+              </div>
+              <div class="status likes">
+                <label>Likes</label>
+                293
+              </div>
+            </div>
+            <div class="rt">
+              <div class="chart">
+                chart here
+              </div>
+            </div>
+          </div>
+        </section>
       </div>
     </section>
   </main>
@@ -141,18 +159,6 @@
     </div>
   </footer>
   <!--footer end here-->
-  <!--active Frame modal start here -->
-   <div class="frameModal">
-        <span class="closeIcon"></span>
-        <div class="heading">Connect your frame</div>
-        <p>Download Zero figures app to connect your frame and get started.</p>
-        <div class="btnGroup">
-          <a href="" class="appStore"></a>
-          <a href="" class="playStore"></a>
-        </div>
-   </div>
-   <div class="overlay"></div>
-  <!--active Frame modal end here -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="js/custom.js"></script>
 </body>

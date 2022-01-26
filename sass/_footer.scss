@@ -1,30 +1,30 @@
 footer {
-    border-top:1px solid $white50;
-    .container{
+    border-top: 1px solid $white50;
+    .container {
         padding: 55px 25px 0px 25px;
         max-width: 1296px;
         margin: 0 auto;
         display: flex;
     }
-    .copyRightText{
+    .copyRightText {
         padding: 55px 25px 55px 25px;
         font-weight: 500;
-        font-size: $h6Font - 1;
+        font-size: $h6Font - 0.08333333333333333rem;
         line-height: 19px;
         color: $white50;
         justify-content: center;
-        span{
-            font-weight:700;
-            color:$white;
+        span {
+            font-weight: 700;
+            color: $white;
         }
     }
-   
-    .footerCaption{
-        p{
+
+    .footerCaption {
+        p {
             font-weight: 500;
             font-size: $h5Font;
             line-height: 23px;
-            color: $white50; 
+            color: $white50;
             max-width: 66%;
         }
     }
@@ -35,7 +35,7 @@ footer {
         color: $white;
         margin-bottom: 25px;
     }
-   
+
     .footerCaption {
         flex: 1.5;
     }
@@ -43,27 +43,52 @@ footer {
         flex: 1;
         ul {
             li {
-                &:last-of-type{
-                    a{
-                        margin-bottom: 0px; 
+                &:last-of-type {
+                    a {
+                        margin-bottom: 0px;
                     }
                 }
                 a {
                     font-weight: 500;
-                    font-size: $h6Font - 1;
+                    font-size: $h6Font - 0.08333333333333333rem;
                     line-height: 19px;
                     color: $white50;
                     margin-bottom: 24px;
                     display: inline-block;
                     width: 100%;
-                    &.instaIcon{
-                        width:23px;
-                        height:23px;
+                    transition: all ease 0.3s;
+                    &:hover {
+                        color: $white70;
+                    }
+                    &.instaIcon {
+                        width: 23px;
+                        height: 23px;
                         background-image: url("data:image/svg+xml,%3Csvg width='23' height='23' viewBox='0 0 23 23' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11.2195 5.88477C8.11401 5.88477 5.60913 8.38965 5.60913 11.4951C5.60913 14.6006 8.11401 17.1055 11.2195 17.1055C14.325 17.1055 16.8298 14.6006 16.8298 11.4951C16.8298 8.38965 14.325 5.88477 11.2195 5.88477ZM11.2195 15.1426C9.21265 15.1426 7.57202 13.5068 7.57202 11.4951C7.57202 9.4834 9.20776 7.84766 11.2195 7.84766C13.2312 7.84766 14.8669 9.4834 14.8669 11.4951C14.8669 13.5068 13.2263 15.1426 11.2195 15.1426ZM18.3679 5.65527C18.3679 6.38281 17.782 6.96387 17.0593 6.96387C16.3318 6.96387 15.7507 6.37793 15.7507 5.65527C15.7507 4.93262 16.3367 4.34668 17.0593 4.34668C17.782 4.34668 18.3679 4.93262 18.3679 5.65527ZM22.0837 6.9834C22.0007 5.23047 21.6003 3.67773 20.3162 2.39844C19.0369 1.11914 17.4841 0.71875 15.7312 0.630859C13.9246 0.52832 8.50952 0.52832 6.70288 0.630859C4.95483 0.713867 3.4021 1.11426 2.11792 2.39355C0.83374 3.67285 0.438232 5.22559 0.350342 6.97852C0.247803 8.78516 0.247803 14.2002 0.350342 16.0068C0.43335 17.7598 0.83374 19.3125 2.11792 20.5918C3.4021 21.8711 4.94995 22.2715 6.70288 22.3594C8.50952 22.4619 13.9246 22.4619 15.7312 22.3594C17.4841 22.2764 19.0369 21.876 20.3162 20.5918C21.5955 19.3125 21.9958 17.7598 22.0837 16.0068C22.1863 14.2002 22.1863 8.79004 22.0837 6.9834ZM19.7498 17.9453C19.3689 18.9023 18.6316 19.6396 17.6697 20.0254C16.2292 20.5967 12.8113 20.4648 11.2195 20.4648C9.62769 20.4648 6.20483 20.5918 4.76929 20.0254C3.81226 19.6445 3.07495 18.9072 2.68921 17.9453C2.11792 16.5049 2.24976 13.0869 2.24976 11.4951C2.24976 9.90332 2.1228 6.48047 2.68921 5.04492C3.07007 4.08789 3.80737 3.35059 4.76929 2.96484C6.20972 2.39355 9.62769 2.52539 11.2195 2.52539C12.8113 2.52539 16.2341 2.39844 17.6697 2.96484C18.6267 3.3457 19.364 4.08301 19.7498 5.04492C20.321 6.48535 20.1892 9.90332 20.1892 11.4951C20.1892 13.0869 20.321 16.5098 19.7498 17.9453Z' fill='white' fill-opacity='0.5'/%3E%3C/svg%3E%0A");
                         background-size: 100% 100%;
+                        &:hover {
+                            margin-top: -2px;
+                        }
                     }
                 }
             }
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    footer {
+        .container {
+            display: inherit;
+            padding:25px 16px 0px 16px
+        }
+        .footerCaption p{
+            max-width: 100%;
+        }
+        .copyRightText {
+            padding: 16px;
+        }
+        .menu {
+           margin-top: 24px;
         }
     }
 }

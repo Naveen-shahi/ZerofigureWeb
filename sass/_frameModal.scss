@@ -1,0 +1,83 @@
+.overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 1;
+    display: none;
+}
+body {
+    &.frameActiveOpen {
+        overflow: hidden;
+        .frameModal {
+            display: block;
+        }
+        .overlay{
+            display: block;
+        }
+    }
+}
+.frameModal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    max-width: 550px;
+    padding: 27px;
+    color: $blackColor;
+    background-color: $white;
+    border-radius: 16px;
+    text-align: center;
+    display: none;
+    .closeIcon {
+        width: 13px;
+        height: 12px;
+        background-image: url("data:image/svg+xml,%3Csvg width='13' height='12' viewBox='0 0 13 12' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cline y1='-0.5' x2='15' y2='-0.5' transform='matrix(-0.707107 -0.707107 -0.707107 0.707107 11.6064 11.6064)' stroke='black'/%3E%3Cline x1='1.20309' y1='11.2529' x2='11.8097' y2='0.64629' stroke='black'/%3E%3C/svg%3E%0A");
+        background-size: 100% 100%;
+        display: inline-block;
+        position: absolute;
+        top: 27px;
+        right: 27px;
+        cursor: pointer;
+    }
+    .heading {
+        font-weight: 600;
+        font-size: $h2Font;
+        line-height: 38px;
+        color: $blackColor;
+        margin: 53px 0px 49px 0px;
+    }
+    p {
+        font-weight: normal;
+        font-size: $h4Font;
+        line-height: 25px;
+        color: $blackColor;
+        max-width: 70%;
+        margin: 0 auto;
+    }
+    .btnGroup {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 47px 0px 23px 0px;
+        .playStore,
+        .appStore {
+            width: 63px;
+            height: 63px;
+            min-width: 63px;
+            min-height: 63px;
+            margin: 0px 35px;
+        }
+        .playStore {
+            background-image: url(../Images/playStore.png);
+            background-size: 100% 100%;
+        }
+        .appStore {
+            background-image: url(../Images/appStore.png);
+            background-size: 100% 100%;
+        }
+    }
+}

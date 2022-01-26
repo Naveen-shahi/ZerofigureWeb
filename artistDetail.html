@@ -33,19 +33,57 @@
   </header>
   <!--header end here-->
   <main class="container">
-    <section class="product">
-      <div class="thankYou">
-        <h1>Thank you for your order.</h1>
-        <div class="orderNumber">Your order number is 4389284</div>
-        <div class="estimateDelivery">
-          <h3>ESTIMATED DELIVERY</h3>
-          22 March 2022
+    <div class="artistDetailForm">
+      <h1>Details</h1>
+      <div class="flexDiv">
+        <div class="lt">
+          <div class="form-group">
+            <input type="text" class="form-control" placeholder="Title*">
+          </div>
+          <div class="form-group">
+            <textarea name="" id="" cols="30" rows="5" class="form-control" placeholder="Description"></textarea>
+          </div>
+          <div class="form-group">
+            <div class="customSelectTag">
+              <label class="heading">Choose category</label>
+              <ul>
+                <li data-value="ABC">ABC </li>
+                <li data-value="XYZ">XYZ</li>
+             </ul>
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="makeTags">
+               <input type="text" id="enterTags" placeholder="Enter Tags">
+            </div>
+            <span class="count">7/500</span>
+         </div>
+         <!--age Restricted start here-->
+         <div class="ageRestricted">
+          <h3>Age restricted content</h3>
+          <small>Age restricted contents are not shown in certain displays. Learn more</small>
+          <div class="radioCheck">
+            <label for="yes">
+              <input type="radio" name="age" id="yes">
+              <span></span> Yes, restrict my contents to audience over 18 
+            </label>
+            <label for="no">
+              <input type="radio" name="age" id="no">
+              <span></span> No, don’t restrict my contents to audience over 18 
+            </label>
+          </div>
         </div>
-        <div class="note">We’ve emailed you an order confirmation and we’ll notify you when your order has shipped.
+        <!--age Restricted end here-->
+        <a href="" class="pinkSmallBtn">Save</a>
         </div>
-        <a href="" class="continueBtn">Place order</a>
+        <div class="rt">
+          <div class="artImgBox">
+            <img src="Images/unnamed.png" alt="">
+          </div>
+          <a href="" class="delArtWork">Delete Artwork From Collection</a>
+        </div>
       </div>
-    </section>
+    </div>
   </main>
   <!--footer start here-->
   <footer>

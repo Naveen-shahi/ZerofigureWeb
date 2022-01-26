@@ -1,0 +1,132 @@
+section.artist .content .dashBoard h1{
+    margin-bottom: 0;
+}
+.dashBoard {
+    margin-top: 60px;
+    display: inline-block;
+    width: 100%;
+    .header {
+        display: flex;
+        justify-content: end;
+        margin-bottom: 20px;
+        input[type="month"] {
+            border: 1px solid $white50;
+            box-sizing: border-box;
+            border-radius: 4px;
+            color: $white;
+            font-size: $h6Font - 2;
+            background-color: $blackColor;
+            padding: 5px;
+            &::-webkit-calendar-picker-indicator {
+                color: rgba(0, 0, 0, 0);
+                opacity: 1;
+                display: block;
+                background-image: url("data:image/svg+xml,%3Csvg width='14' height='14' viewBox='0 0 14 14' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M1.75 3.49967C1.75 2.85534 2.27233 2.33301 2.91667 2.33301H11.0833C11.7277 2.33301 12.25 2.85534 12.25 3.49967V11.6663C12.25 12.3107 11.7277 12.833 11.0833 12.833H2.91667C2.27233 12.833 1.75 12.3107 1.75 11.6663V3.49967Z' stroke='white' stroke-width='1.16667' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M9.33337 1.16699V3.50033' stroke='white' stroke-width='1.16667' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M4.66663 1.16699V3.50033' stroke='white' stroke-width='1.16667' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M1.75 5.83301H12.25' stroke='white' stroke-width='1.16667' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+                width: 20px;
+                height: 20px;
+                border-width: thin;
+            }
+        }
+    }
+    .grapWr {
+        display: flex;
+        .lt {
+            width: 300px;    
+            .status {
+                background: rgba(255, 255, 255, 0.01);
+                box-shadow: inset 0px 39px 56px -36px rgba(255, 255, 255, 0.5), inset 0px 7px 11px -4px #ffffff,
+                    inset 0px -82px 68px -64px rgba(14, 78, 114, 0.3), inset 0px 98px 100px -48px rgba(0, 161, 253, 0.3),
+                    inset 0px 4px 18px rgba(8, 59, 88, 0.3), inset 0px 1px 40px rgba(13, 137, 207, 0.2);
+                backdrop-filter: blur(100px);
+                border-radius: 16px;
+                font-weight: 600;
+                font-size: $h1Font;
+                line-height: 51px;
+                text-align: right;
+                letter-spacing: 1px;
+                color: $white;
+                position: relative;
+                display: flex;
+                height: 150px;
+                flex-direction: column;
+                padding: 31px;
+                margin-bottom: 53px;
+                &:last-of-type {
+                    margin-bottom: 0px;
+                }
+                &.earned {
+                    &:after {
+                        content: "";
+                        position: absolute;
+                        bottom: 0;
+                        left: 0;
+                        width: 96px;
+                        height: 108px;
+                        background-image: url("data:image/svg+xml,%3Csvg width='96' height='108' viewBox='0 0 96 108' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M55.8274 68.1133L26.3219 14.1533L74.0344 39.9219L55.8274 68.1133Z' fill='%23434162' fill-opacity='0.15'/%3E%3Cpath d='M69.7406 93.5578L58.9459 73.8163L77.1529 45.6249L69.7406 93.5578Z' fill='%23434162' fill-opacity='0.15'/%3E%3Cpath d='M55.3887 68.3525L25.8832 14.3926L21.8293 68.4672L55.3887 68.3525Z' fill='%23434162' fill-opacity='0.15'/%3E%3Cpath d='M69.3019 93.797L58.5072 74.0556L24.9477 74.1703L69.3019 93.797Z' fill='%23434162' fill-opacity='0.15'/%3E%3C/svg%3E%0A");
+                        background-size: 100% 100%;
+                        display: block;
+                    }
+                }
+                &.likes {
+                    &:after {
+                        content: "";
+                        position: absolute;
+                        bottom: -20px;
+                        left: 0;
+                        width: 117px;
+                        height: 115px;
+                        background-image: url("../Images/heart.png");
+                        background-size: 100% 100%;
+                        display: block;
+                    }
+                }
+                label {
+                    font-weight: 700;
+                    font-size: $h5Font;
+                    line-height: 23px;
+                    margin-bottom: 23px;
+                    text-align: left;
+                }
+            }
+        }
+        .rt {
+            width: calc(100% - 300px);
+            margin-left: 53px;
+            .chart {
+                background: rgba(255, 255, 255, 0.01);
+                box-shadow: inset 0px 39px 56px -36px rgba(255, 255, 255, 0.5), inset 0px 7px 11px -4px #ffffff,
+                    inset 0px -82px 68px -64px rgba(14, 78, 114, 0.3), inset 0px 98px 100px -48px rgba(0, 161, 253, 0.3),
+                    inset 0px 4px 18px rgba(8, 59, 88, 0.3), inset 0px 1px 40px rgba(13, 137, 207, 0.2);
+                backdrop-filter: blur(100px);
+                border-radius: 16px;
+                height: 100%;
+            }
+        }
+    }
+}
+@media only screen and (max-width: 768px) {
+    .dashBoard {
+        .header{
+            margin-top: 20px;
+        }
+        .grapWr {
+            display: inherit;
+            width: 100%;
+            .lt,.rt{
+                width:100%;
+                margin: 0;
+            }
+            .lt{
+                .status{
+                    margin-bottom: 20px;
+                }
+            }
+            .rt{
+                margin-top: 20px;
+                .chart{
+                    min-height: 200px;
+                }
+            }
+        }
+    }
+}

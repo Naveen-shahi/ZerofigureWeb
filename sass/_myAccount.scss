@@ -68,53 +68,25 @@
         margin-bottom: 48px;
     }
     .form-group {
-        margin-top: 30px;
-        position: relative;
         .passwordShowBtn {
-            position: absolute;
-            top: 27px;
-            right: 30px;
-            width: 18px;
-            height: 7px;
-            background-image: url("../Images/eyeClose.png");
-            background-size: 100% 100%;
-            &.eyeOpen {
-                top: 21px;
-                width: 20px;
-                height: 16px;
+            background-image: url("../Images/eyeClosegrey.png");
+           &.eyeOpen {
                 background-image: url("data:image/svg+xml,%3Csvg width='20' height='17' viewBox='0 0 20 17' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1.11774 8.75416C1.04045 8.60492 1 8.43812 1 8.26868C1 8.09923 1.04045 7.93243 1.11774 7.7832C3.00974 4.14964 6.50475 1 9.99976 1C13.4948 1 16.9898 4.14964 18.8818 7.78424C18.9591 7.93347 18.9995 8.10027 18.9995 8.26971C18.9995 8.43916 18.9591 8.60596 18.8818 8.75519C16.9898 12.3888 13.4948 15.5384 9.99976 15.5384C6.50475 15.5384 3.00974 12.3888 1.11774 8.75416V8.75416Z' stroke='black' stroke-opacity='0.5' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M12.0462 5.98891C12.3375 6.27505 12.5706 6.61894 12.7318 7.00025C12.8929 7.38155 12.9788 7.79253 12.9844 8.20891C12.99 8.62528 12.9151 9.03858 12.7642 9.42439C12.6134 9.8102 12.3895 10.1607 12.106 10.4551C11.8225 10.7496 11.4849 10.982 11.1134 11.1387C10.7419 11.2954 10.3439 11.3731 9.94295 11.3673C9.542 11.3615 9.14624 11.2723 8.77906 11.105C8.41187 10.9376 8.08072 10.6955 7.80517 10.393C7.27525 9.80245 6.98675 9.02134 7.00047 8.21424C7.01418 7.40714 7.32903 6.63708 7.87868 6.06629C8.42834 5.49549 9.16988 5.16853 9.94709 5.15429C10.7243 5.14005 11.4765 5.43964 12.0452 5.98995' stroke='black' stroke-opacity='0.5' stroke-width='1.429' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
             }
         }
-        .info {
-            font-size: $smallHeading;
-            color: $blackColor;
-            margin-top: 13px;
-            padding-left: 30px;
-            display: inline-block;
-            width: 100%;
-            text-align: left;
-        }
+    }
+    .pinkBtn{
+        margin-top: 32px;
     }
     .form-control {
         border: 1px solid $blackColor;
-        box-sizing: border-box;
-        border-radius: 50px;
-        font-size: $h5Font;
-        color: $blackColor;
-        padding: 18px 30px;
         background-color: $white;
-        width: 100%;
-        &:focus {
-            outline: none;
-        }
-        ::-webkit-input-placeholder {
-            color: rgba(0, 0, 0, 0.5);
-        }
-        :-ms-input-placeholder {
-            color: rgba(0, 0, 0, 0.5);
-        }
-        ::placeholder {
-            color: rgba(0, 0, 0, 0.5);
-        }
+    }
+}
+@media only screen and (max-width: 768px) {
+    .myAccountWrapper {
+        padding: 40px 20px;
+        margin: 16px auto;
+        max-width: calc(100% - 36px);
     }
 }

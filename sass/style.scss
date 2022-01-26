@@ -1,43 +1,14 @@
 @import "_variable.scss";
 @import "_global.scss";
 @import "_header.scss";
-@import "_footer.scss";
-.lamp {
-    width: 282px;
-    height: 282px;
-    position: absolute;
-    top: 83px;
-    left: 575px;
-}
-section {
-    &.product {
-        @import "_thankYou.scss";
-        display: flex;
-        padding: 0px 25px 0px 43px;
-        .productImgWrapper {
-            text-align: center;
-            max-width: calc(100% - 586px);
-            flex: 0 0 calc(100% - 586px);
-            .frameImg {
-                img {
-                    max-width: 75%;
-                    &.wd49 {
-                        max-width: 49%;
-                    }
-                }
-                margin-bottom: 40px;
-            }
-        }
-        .productInfo {
-            max-width: 586px;
-            flex: 0 0 586px;
-            @import "_buyNow.scss";
-            @import "_orderSummary.scss";
-        }
-    }
-}
+@import "_product.scss";
 @import "_myAccount.scss";
 @import "_artist.scss";
-@media only screen and (min-width: 1360px) {
-    
-}
+@import "_frameModal.scss";
+@import "_uploadContent.scss";
+@import "_artistCorner.scss";
+@import "_dashboard.scss";
+@import "_artistSeen.scss";
+@import "_artistDetailForm.scss";
+@import "_footer.scss";
+

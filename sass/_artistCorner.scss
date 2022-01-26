@@ -1,0 +1,64 @@
+.artistCorner {
+    display: flex;
+    .lt {
+        width: 370px;
+        display: flex;
+        .ltInner {
+            flex: 1;
+            padding: 0px 5px;
+        }
+        .rtInner {
+            flex: 1;
+            padding: 0px 5px;
+        }
+        .uploadWrapper {
+            width: 100%;
+            box-sizing: border-box;
+            .uploadIcon {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                margin-bottom: 10px;
+            }
+            .caption {
+                font-weight: normal;
+                font-size: $h6Font;
+                line-height: 20px;
+                color: $white;
+                margin-top: 23px;
+                display: inline-block;
+                width: 100%;
+                text-align: center;
+            }
+        }
+        .uploadedImg {
+            width: 100%;
+            box-sizing: border-box;
+            position: relative;
+            border-radius: 10px;
+            margin-bottom: 10px;
+            img {
+                width: 100%;
+            }
+        }
+    }
+    .rt {
+        width: 400px;
+        margin-left: auto;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .artistCorner{
+        display: inherit;
+        .lt{
+            width: 100%;
+            .ltInner,.rtInner{
+                width: 50%;
+            }
+        }
+        .rt{
+            width: 100%;
+        }
+    }
+}

@@ -32,18 +32,35 @@
     </div>
   </header>
   <!--header end here-->
-  <main class="container">
-    <section class="product">
-      <div class="thankYou">
-        <h1>Thank you for your order.</h1>
-        <div class="orderNumber">Your order number is 4389284</div>
-        <div class="estimateDelivery">
-          <h3>ESTIMATED DELIVERY</h3>
-          22 March 2022
+  <main class="container marginMinium">
+    <section class="artist">
+      <aside>
+        <div class="artistName">
+          Hi, Lili
         </div>
-        <div class="note">We’ve emailed you an order confirmation and we’ll notify you when your order has shipped.
+        <nav>
+          <ul>
+            <li>
+              <a href="artist.html">What’s on today</a>
+            </li>
+            <li>
+              <a href="frame.html" class="active">Frames</a>
+            </li>
+            <li>
+              <a href="myDetail.html">My details</a>
+            </li>
+            <li>
+              <a href="subscription-billing.html">Subscription & billing</a>
+            </li>
+          </ul>
+        </nav>
+      </aside>
+      <div class="content">
+        <h1>Frames</h1>
+        <div class="noOrder">
+          You currently do not have any orders.
+          <a href="" class="pinkBtn">Explore Zero figures frames</a>
         </div>
-        <a href="" class="continueBtn">Place order</a>
       </div>
     </section>
   </main>
@@ -86,6 +103,18 @@
     </div>
   </footer>
   <!--footer end here-->
+  <!--active Frame modal start here -->
+   <div class="frameModal">
+        <span class="closeIcon"></span>
+        <div class="heading">Connect your frame</div>
+        <p>Download Zero figures app to connect your frame and get started.</p>
+        <div class="btnGroup">
+          <a href="" class="appStore"></a>
+          <a href="" class="playStore"></a>
+        </div>
+   </div>
+   <div class="overlay"></div>
+  <!--active Frame modal end here -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="js/custom.js"></script>
 </body>
