@@ -88,5 +88,9 @@
         padding: 40px 20px;
         margin: 16px auto;
         max-width: calc(100% - 36px);
+        .pinkBtn,.whiteBtn{
+            min-width: 100%;
+            width: 100%;
+        }
     }
 }
