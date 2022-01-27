@@ -293,6 +293,12 @@ section {
             display: inherit;
             .content{
                 width: 100%;
+                .selectSubcription{
+                    display: inherit;
+                    .subcription{
+                        margin-bottom: 30px;
+                    }
+                }
                 .myDetailTable{
                     overflow-x: auto;
                 }
