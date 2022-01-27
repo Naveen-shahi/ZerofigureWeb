@@ -279,6 +279,14 @@ section {
     }
 }
 @media only screen and (max-width: 768px) {
+    .frameModal{
+        max-width: 90%;
+        width: 90%;
+        padding: 15px;
+        p{
+            width:100%;
+        }
+    }
     section{
         &.artist{
             padding:0px 16px;
@@ -290,6 +298,11 @@ section {
                 }
                 .noOrder{
                     width:100%;
+                    margin-left: 0px;
+                    .pinkBtn{
+                        min-width:100%;
+                        width:100%;
+                    }
                 }
                 .deleteInfo{
                     p{
